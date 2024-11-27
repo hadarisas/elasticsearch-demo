@@ -110,7 +110,13 @@ The application consists of four main components:
 
 If you want to modify the code and run the services individually:
 
-### Frontend
+1. First, start Elasticsearch and Kibana using the development Docker Compose file:
+
+```bash
+docker compose -f docker-compose.copy.yml up -d
+```
+
+2. Set up the Frontend:
 
 ```bash
 cd client
@@ -118,13 +124,20 @@ npm install
 npm run dev
 ```
 
-### Backend
+The frontend will be available at http://localhost:5173
+
+3. Set up the Backend:
 
 ```bash
 cd server
+cp .env.example .env    # Configure your environment variables
 npm install
 npm run dev
 ```
+
+The backend will be available at http://localhost:3001
+
+> **Note:** For development, we use `docker-compose.copy.yml` which only runs Elasticsearch and Kibana services. This allows you to run the frontend and backend services locally while still connecting to the containerized search infrastructure.
 
 ## API Endpoints
 
