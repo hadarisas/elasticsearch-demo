@@ -2,6 +2,11 @@
 
 A full-stack application demonstrating Elasticsearch functionality with a Google-like product search interface. Built with Vue.js, Express.js, and Elasticsearch.
 
+### Demo Screenshots
+
+![Search Demo](screenshots/demo.gif)
+_Search demo_
+
 ### Health Check
 
 ![Health Check](screenshots/health.png)
