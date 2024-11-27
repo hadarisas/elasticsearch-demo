@@ -1,0 +1,145 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Build outputs
+dist/
+build/
+out/
+.output/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+.jest/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Elasticsearch
+elasticsearch-data/
+data/
+
+# Vue.js specific
+.nuxt/
+.nitro/
+.cache/
+.output/
+.env
+dist/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# Debug files
+.debug/
+*.debug
+
+# System Files
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+.cache/
+.history/
+.dynamodb/
+.fusebox/
+.tern-port
+.vuepress/dist
+.serverless/
+.next/
+```
+
+This `.gitignore` file:
+1. Ignores dependency directories
+2. Protects sensitive environment files
+3. Excludes build outputs
+4. Ignores log files
+5. Excludes editor-specific files
+6. Ignores OS-generated files
+7. Excludes test coverage reports
+8. Ignores Docker-specific files
+9. Protects Elasticsearch data
+10. Handles Vue.js specific files
+11. Ignores temporary files
+12. Excludes debug files
+13. Handles package manager specific files
+14. Ignores TypeScript build info
+15. Excludes miscellaneous development files
+
+Place this file in your project root directory as `.gitignore`. You may need to remove any files that are already tracked by Git:
+
+```bash
+# Remove tracked files that should be ignored
+git rm -r --cached .
+git add .
+git commit -m "Update gitignore and remove tracked files"
+```
