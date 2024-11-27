@@ -80,13 +80,13 @@ cp server/env_example server/env
 2. Start the application using Docker Compose:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 3. Wait for all services to start (this may take a few minutes on first run). You can check the status with:
 
 ```bash
-docker-compose ps
+docker compose ps
 ```
 
 4. Access the application:
@@ -184,8 +184,8 @@ The application uses the following Docker images:
 
 3. **Reset everything and start fresh:**
    ```bash
-   docker-compose down -v
-   docker-compose up -d
+   docker compose down -v
+   docker compose up -d
    ```
 
 ## Data Management
@@ -195,7 +195,7 @@ The application comes with pre-loaded sample product data. The data is automatic
 1. Stop the containers:
 
    ```bash
-   docker-compose down
+   docker compose down
    ```
 
 2. Remove the volume:
@@ -206,7 +206,7 @@ The application comes with pre-loaded sample product data. The data is automatic
 
 3. Restart the application:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
 ## Contributing
