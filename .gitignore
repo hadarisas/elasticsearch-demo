@@ -142,4 +142,4 @@ Place this file in your project root directory as `.gitignore`. You may need to 
 git rm -r --cached .
 git add .
 git commit -m "Update gitignore and remove tracked files"
-```
+```client/src/assets/hassan.jpeg
